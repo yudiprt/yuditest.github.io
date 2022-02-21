@@ -1,0 +1,760 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Greeva - Bootstrap 4 Landing Page Tamplate</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Coderthemes" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+
+        <!--Material Icon -->
+        <link rel="stylesheet" type="text/css" href="assets/css/materialdesignicons.min.css" />
+
+        <!-- pe-7 Icon -->
+        <link rel="stylesheet" type="text/css" href="assets/css/pe-icon-7-stroke.css" />
+
+        <!-- owl carousel css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/owl.transitions.css">
+
+        <!-- Custom  sCss -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+        <style>
+            .leaflet-container {
+            height: 700px;
+            width: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+            .pt-section1{
+                padding-top: 150px;
+            }
+            .text-orange{
+                color: #ff9933 !important;
+            }
+            .navbar-custom .navbar-nav .nav-item.active .nav-link{
+                color: #188ae2 !important;
+            }
+            .navbar-custom .navbar-nav .nav-item .nav-link{
+                color: #000000 !important;
+            }
+            .nav-sticky.navbar-custom{
+                background-color: #ccffff;
+            }
+            .navbar-custom .navbar-nav .nav-item .nav-link{
+                margin: 0 25px;
+            }
+            .bg-custome{
+                background-color: #ff9933 !important;
+            }
+            .card-custome{
+                border-radius: 35px;
+                background: transparent;
+                box-shadow: 0 0 0rem rgb(108 118 134 / 0%);
+            }
+            .no-padding{
+                padding: 0px;
+            }
+            .text-icon-custome{
+                color: #fff;
+            }
+           @media (min-width: 1600px) {
+            .custome_padding_logo{
+                padding-right: 40px;
+                padding-top: 10%;
+            }
+                .container-section1 {
+                    width:100%;
+                    max-width:100%;
+                    padding-left: 106px;
+                }
+                .fs-title-custome{
+                    font-size: 70px;
+                    font-weight: 900;
+                }
+                .fs-subtitle-custome{
+                    font-size: 45px;
+                font-weight: 400;
+                }
+                .fs-download-now{
+                    font-size: 40px;
+                    font-weight: 900;
+                    margin-top: 210px;
+                    margin-bottom: 20px;
+                }
+                .title-our_service{
+                    font-size: 60px;
+                    font-weight: 900;
+                    color: #fff;
+                }
+                .custome_section3{
+                    max-width: 100%;
+                    padding-left: 106px;
+                }
+                .custome_section4{
+                    max-width: 100%;
+                    padding-left: 106px;
+                }
+                .home-title h1{
+                    line-height: 65px;
+                }
+                .title-xlife{
+                    font-size: 70px;
+                }
+            }
+                    
+        </style>
+    </head>
+
+    <body>
+
+        <!--Navbar Start-->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
+            <div class="container-fluid" style="margin-left:94px">
+                <!-- LOGO -->
+                <a class="logo text-uppercase" href="index.html">
+                    <img src="assets/images/logo-xlife-sm.png" alt="" class="logo-light" height="50" />
+                    <img src="assets/images/logo-xlife-sm.png" alt="" class="logo-dark" height="50" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                        <li class="nav-item active">
+                            <a href="#home" class="nav-link">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#features" class="nav-link">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#demos" class="nav-link">CONTACT US</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- home start -->
+        <section class="bg-home" id="home">
+            <div class="container-fluid container-section1">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="home-title text-white">
+                            <h1 class="text-orange fs-title-custome">Download Aplikasi</h1>
+                            <h1 class="text-orange fs-title-custome">X.LIFE banyak untungnya!</h1>
+                            <h3 class="text-orange fs-subtitle-custome">Semua masalah kebutuhanmu pasti beres</h3>
+                            <h3 class="fs-download-now">Download Sekarang :</h3>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <a href="https://play.google.com/store/apps/details?id=com.jasaconnect.x.life" target="_blank"><img class="img-fluid" src="assets/images/background/playstore-xs.png"></a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="https://apps.apple.com/id/app/xlife/id1548264422?l=id" target="_blank"><img class="img-fluid" src="assets/images/background/appstore-xs.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pr-0">
+                        <div class="home-img mt-5 mt-lg-0">
+                            <img src="assets/images/background/phone1.png" alt="" class="img-fluid mx-auto d-block mt-5">
+                        </div>
+                    </div>
+                </div>
+                <!-- row end -->
+            </div>
+            <!-- container-fluid end -->
+            <!-- <div class="bg-pattern-effect">
+                <img src="assets/images/bg-pattern.png" alt="">
+            </div> -->
+
+        </section>
+        <!-- home end -->
+        
+        
+
+        <!-- Services start -->
+        <section class="section bg-custome" id="services">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="title text-center mb-4">
+                            <h1 class="mb-2 title-our_service">OUR SERVICE</h1>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="owl-demo" class="owl-carousel owl-theme testimonial">
+                        <div class="item testi-box">
+                            <div class="card card-custome">
+                                <div class="card-body no-padding">
+                                    <img src="assets/images/background/service1-new.png" alt="" class="img-fluid mx-auto d-block">
+                                    <div class="row mt-2">
+                                        <div class="col-lg-2"></div>
+                                        <div class="col-lg-2 pr-0">
+                                            <img src="assets/images/icon/xauto.png" alt="" class="img-fluid mx-auto d-block">
+                                        </div>
+                                        <div class="col-lg-6">
+                                             <h1 class="text-icon-custome">X.AUTO</h1>
+                                        </div>
+                                        <div class="col-lg-2"></div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item testi-box">
+                            <div class="card card-custome">
+                                <div class="card-body no-padding">
+                                    <img src="assets/images/background/service2-new.png" alt="" class="img-fluid mx-auto d-block">
+                                    <div class="row mt-2">
+                                        <div class="col-lg-2"></div>
+                                        <div class="col-lg-2 pr-0">
+                                            <img src="assets/images/icon/xclean.png" alt="" class="img-fluid mx-auto d-block">
+                                        </div>
+                                        <div class="col-lg-6">
+                                             <h1 class="text-icon-custome">X.CLEAN</h1>
+                                        </div>
+                                        <div class="col-lg-2"></div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item testi-box">
+                            <div class="card card-custome">
+                                 <div class="card-body no-padding">
+                                    <img src="assets/images/background/service3-new.png" alt="" class="img-fluid mx-auto d-block">
+                                    <div class="row mt-2">
+                                        <div class="col-lg-2"></div>
+                                        <div class="col-lg-2 pr-0">
+                                            <img src="assets/images/icon/xfogging.png" alt="" class="img-fluid mx-auto d-block">
+                                        </div>
+                                        <div class="col-lg-6">
+                                             <h1 class="text-icon-custome">X.FOGGING</h1>
+                                        </div>
+                                        <div class="col-lg-2"></div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item testi-box">
+                            <div class="card card-custome">
+                                <div class="card-body no-padding">
+                                    <img src="assets/images/background/service1-new.png" alt="" class="img-fluid mx-auto d-block">
+                                    <div class="row mt-2">
+                                        <div class="col-lg-2"></div>
+                                        <div class="col-lg-2 pr-0">
+                                            <img src="assets/images/icon/xauto.png" alt="" class="img-fluid mx-auto d-block">
+                                        </div>
+                                        <div class="col-lg-6">
+                                             <h1 class="text-icon-custome">X.AUTO</h1>
+                                        </div>
+                                        <div class="col-lg-2"></div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- row end -->
+            </div>
+            <!-- container-fluid end -->
+        </section>
+        <!-- Services end -->
+
+        <!-- Features start -->
+        <section class="section pt-0" id="features">
+            <div class="bg-overlay"></div>
+            
+            <div class="container-fluid custome_section3">
+                <div class="row">
+                    <div class="col-4 custome_padding_logo">
+                        <img src="assets/images/logo-xlife-lg.png" alt="" class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-8 pr-0">
+                        <img src="assets/images/background/mitra.png" alt="" class="img-fluid mx-auto d-block">
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center mt-4">
+                    
+                    <div class="col-lg-8">
+                        <div>
+                            <h1 class="mb-3">Akses layanan 24jam termudah untuk memenuhi kebutuhan sehari-hari dengan cepat dengan harga terjangkau</h1>
+                            <div class="mb-4">
+                               <h1 class="title-xlife">Apa itu X.Life?</h1>
+                            </div>
+                            <div class="mb-1">
+                                <h1>X.Life adalah layanan jasa kebutuhan gaya hidup. urusan rumah tangga hingga kedaruratan yang memberikan kemudahan dalam satu aplikasi</h1>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+                <!-- row end -->
+            </div>
+            <!-- container-fluid end -->
+        </section>
+        <!-- Features end -->
+
+        <!-- available demos start -->
+        <section class="section" id="demos">
+            <div class="container-fluid custome_section4">
+                <div class="title text-center mb-4">
+                            <h1 class="mb-2">Dari kota-kota ini X.Life siap membantumu</h1>
+                            <h3>Jakarta, <b>Bandung</b>, Semarang,</h3>
+                        </div>
+                <div id='map'></div>    
+    
+            </div>
+            <!-- container-fluid end -->
+        </section>
+        <!-- available demos end -->
+
+        <!-- testimonial start -->
+        <section class="section bg-light" id="clients">
+            <div class="bg-left-shape-overlay"></div>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="title text-center mb-5">
+                            <h5 class="text-primary small-title">Clients</h5>
+                            <h3>What our Users Says</h3>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- row end -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                        <!-- owl-carousel end -->
+                    </div>
+                </div>
+                <!-- row end -->
+
+                <div class="row mt-5 pt-4">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="client-images">
+                            <img src="assets/images/clients/1.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="client-images">
+                            <img src="assets/images/clients/2.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="client-images">
+                            <img src="assets/images/clients/3.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="client-images">
+                            <img src="assets/images/clients/4.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                </div>
+                <!-- row end -->
+            </div>
+            <!-- container-fluid end -->
+        </section>
+        <!-- testimonial end -->
+
+        <!-- pricing start -->
+        <section class="section bg-gradient pb-0" id="pricing">
+            <div class="bg-pattern-effect">
+                <img src="assets/images/bg-pattern-2.png" alt="">
+            </div>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="title text-center mb-5">
+                            <h5 class="text-white-50 small-title">Pricing</h5>
+                            <h3 class="text-white">Choose your plan</h3>
+                            <p class="text-white-50">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- row end -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="row">
+                                    
+                                    <div class="col-md-4">
+                                        <div class="text-center text-md-left">
+                                            <div class="mb-5">
+                                                <i class="pe-7s-helm h1"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-18">Free</h5>
+                                                <p class="mb-4 mb-md-0">Sed ut perspiciatis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="text-center">
+                                            <p>Customer support</p>
+                                            <p>Free Updates</p>
+                                            <p>1 Domain</p>
+                                            <p class="mb-4 mb-md-0">24 x 7 Support</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="text-md-right text-center">
+                                            <h3><sup><small>$</small></sup>00</h3>
+                                            <p class="mb-5">Per License</p>
+                                            <div>
+                                                <a href="#" class="btn btn-success btn-rounded">Purchase Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="text-center text-md-left">
+                                            <div class="mb-5">
+                                                <i class="pe-7s-box2 h1"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-18">Single</h5>
+                                                <p class="mb-4 mb-md-0">Sed ut perspiciatis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="text-center">
+                                            <p>Customer support</p>
+                                            <p>Free Updates</p>
+                                            <p>1 Domain</p>
+                                            <p class="mb-4 mb-md-0">24 x 7 Support</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="text-md-right text-center">
+                                            <h3><sup><small>$</small></sup>24</h3>
+                                            <p class="mb-5">Per License</p>
+                                            <div>
+                                                <a href="#" class="btn btn-success btn-rounded">Purchase Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="text-center text-md-left">
+                                            <div class="mb-5">
+                                                <i class="pe-7s-photo-gallery h1"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-18">Multiple</h5>
+                                                <p class="mb-4 mb-md-0">Sed ut perspiciatis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="text-center">
+                                            <p>Customer support</p>
+                                            <p>Free Updates</p>
+                                            <p>1 Domain</p>
+                                            <p class="mb-4 mb-md-0">24 x 7 Support</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="text-md-right text-center">
+                                            <h3><sup><small>$</small></sup>120</h3>
+                                            <p class="mb-5">Per License</p>
+                                            <div>
+                                                <a href="#" class="btn btn-success btn-rounded">Purchase Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="row">
+                                    
+                                    <div class="col-md-4">
+                                        <div class="text-center text-md-left">
+                                            <div class="mb-5">
+                                                <i class="pe-7s-shield h1"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-18">Extended</h5>
+                                                <p class="mb-4 mb-md-0">Sed ut perspiciatis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="text-center">
+                                            
+                                            <p>Customer support</p>
+                                            <p>Free Updates</p>
+                                            <p>1 Domain</p>
+                                            <p class="mb-4 mb-md-0">24 x 7 Support</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="text-md-right text-center">
+                                            <h3><sup><small>$</small></sup>999</h3>
+                                            <p class="mb-5">Per License</p>
+                                            <div>
+                                                <a href="#" class="btn btn-success btn-rounded">Purchase Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- container-fluid end -->
+        </section>
+        <!-- pricing end -->
+
+        <!-- contact us start -->
+        <section class="section pb-lg-0" id="contact">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="title text-center mb-4">
+                            <h5 class="text-primary small-title">Contact</h5>
+                            <h3>Get in Touch</h3>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- row end -->
+                <div class="row align-items-end">
+                    <div class="col-lg-6">
+                        <div class="contact-img d-none d-lg-block">
+                            <img src="assets/images/contact-us.svg" alt="" class="img-fluid mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card contact-form mb-lg-0">
+                            <div class="custom-form p-5">
+                                
+                                <div id="message"></div>
+                                <form method="post" action="php/contact.php" name="contact-form" id="contact-form">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input name="name" id="name" type="text" class="form-control" placeholder="Enter your name...">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input name="email" id="email" type="email" class="form-control" placeholder="Enter your email...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end row -->
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Enter your message..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end row -->
+
+                                    <div class="row">
+                                        <div class="col-lg-12 text-right">
+                                            <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary btn-rounded" value="Send Message">
+                                            <div id="simple-msg"></div>
+                                        </div>
+                                    </div>
+                                    <!-- end row -->
+                                </form>
+                            </div>
+                            <!-- end custom-form -->
+                
+                        </div>
+                    </div>
+
+                </div>
+                <!-- row end -->
+            </div>
+            <!-- container-fluid end -->
+        </section>
+        <!-- contact us end -->
+
+        <!-- footer start -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="mb-3">
+                            <img src="assets/images/logo-light.png" alt="" height="20">
+                        </div>
+                        <p>Bootstrap 4 Landing Page Template</p>
+                        <div class="pt-1">
+                            <div class="float-left mr-2">
+                                <i class="pe-7s-phone h4 text-white"></i>
+                            </div>
+                            <p class="text-white-50 overflow-hidden">(123) 456-7890</p>
+                        </div>
+                        <div>
+                            <div class="float-left mr-2">
+                                <i class="pe-7s-mail h4 text-white"></i>
+                            </div>
+                            <p class="text-white-50 overflow-hidden mb-0">example@abc.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-list">
+                            <p class="text-white mb-3">About</p>
+                            <ul class="list-unstyled footer-list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Faq</a></li>
+                                <li><a href="#">Clients</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-list">
+                            <p class="text-white mb-3">Social</p>
+                            <ul class="list-unstyled footer-list">
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Behance</a></li>
+                                <li><a href="#">Dribbble</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-list">
+                            <p class="text-white mb-3">Resources</p>
+                            <ul class="list-unstyled footer-list">
+                                <li><a href="#">Help & Support</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-list">
+                            <p class="text-white mb-3">More Info</p>
+                            <ul class="list-unstyled footer-list">
+                                <li><a href="#">For Marketing</a></li>
+                                <li><a href="#">For CEOs</a></li>
+                                <li><a href="#">For Agencies</a></li>
+                                <li><a href="#">Our Apps</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- row end -->
+            </div>
+            <!-- container-fluid end -->
+        </footer>
+        <!-- footer end -->
+
+        <div class="footer-alt py-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <p class="mb-0">2019 © Greeva. Design by <a href="" class="text-white">Coderthemes</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/jquery.easing.min.js"></script>
+        <script src="assets/js/scrollspy.min.js"></script>
+
+        <!-- owl-carousel -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+        <!-- custom js -->
+        <script src="assets/js/app.js"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <script type="text/javascript">
+             var map = L.map('map').setView([-2.182942726364413, 114.68636919061137], 5.5);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var LeafIcon = L.Icon.extend({
+        options: {
+            shadowUrl: 'leaf-shadow.png',
+            iconSize:     [18, 35],
+            popupAnchor:  [-1, -5]
+        }
+    });
+
+    var pinxlife = new LeafIcon({iconUrl: 'assets/images/background/pin-google-xlife.png'});
+
+    var Jakarta = L.marker([-6.2297419,106.7594779], {icon: pinxlife}).bindPopup('Jabodetabek').addTo(map);
+    var Bandung = L.marker([-6.9034482,107.6081381], {icon: pinxlife}).bindPopup('Bandung').addTo(map);
+    var Jawabarat = L.marker([-6.8675185,107.0446812], {icon: pinxlife}).bindPopup('Jawabarat').addTo(map);
+    var Cirebon = L.marker([-6.7428614,108.5190195], {icon: pinxlife}).bindPopup('Cirebon').addTo(map);
+    var Tegal = L.marker([-7.4447991,108.4283603], {icon: pinxlife}).bindPopup('Tegal').addTo(map);
+    var Purwokerto = L.marker([-7.4302745,109.1994041], {icon: pinxlife}).bindPopup('Purwokerto').addTo(map);
+    var Semarang = L.marker([-7.0247246,110.3470251], {icon: pinxlife}).bindPopup('Semarang').addTo(map);
+    var Yogyakarta = L.marker([-7.8032501,110.3573353], {icon: pinxlife}).bindPopup('Yogyakarta').addTo(map);
+    var Surabaya = L.marker([-7.2756141,112.6426436], {icon: pinxlife}).bindPopup('Surabaya').addTo(map);
+    var Malang = L.marker([-7.9786439,112.5967635], {icon: pinxlife}).bindPopup('Malang').addTo(map);
+    var Bali = L.marker([-8.4553718,114.7913886], {icon: pinxlife}).bindPopup('Bali').addTo(map);
+    var Makasar = L.marker([-5.1114857,119.3325874], {icon: pinxlife}).bindPopup('Makasar').addTo(map);
+        </script>
+    </body>
+
+</html>
